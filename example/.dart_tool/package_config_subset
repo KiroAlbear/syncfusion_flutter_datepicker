@@ -102,10 +102,6 @@ flutter_test
 3.3
 file:///C:/Users/KIROLOS/fvm/versions/stable/packages/flutter_test/
 file:///C:/Users/KIROLOS/fvm/versions/stable/packages/flutter_test/lib/
-syncfusion_flutter_core
-2.17
-file:///D:/datePicker/syncfusion_flutter_core/
-file:///D:/datePicker/syncfusion_flutter_core/lib/
 syncfusion_flutter_datepicker
 2.17
 file:///D:/datePicker/syncfusion_flutter_datepicker/
@@ -114,4 +110,8 @@ example
 2.17
 file:///D:/datePicker/syncfusion_flutter_datepicker/example/
 file:///D:/datePicker/syncfusion_flutter_datepicker/example/lib/
+syncfusion_flutter_core
+2.17
+file:///D:/datePicker/syncfusion_flutter_datepicker/syncfusion_flutter_core/
+file:///D:/datePicker/syncfusion_flutter_datepicker/syncfusion_flutter_core/lib/
 2

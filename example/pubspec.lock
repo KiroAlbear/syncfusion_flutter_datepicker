@@ -171,7 +171,7 @@ packages:
   syncfusion_flutter_core:
     dependency: transitive
     description:
-      path: "../../syncfusion_flutter_core"
+      path: "../syncfusion_flutter_core"
       relative: true
     source: path
     version: "25.2.7"

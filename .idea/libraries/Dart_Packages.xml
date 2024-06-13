@@ -229,7 +229,6 @@
         <entry key="flutter">
           <value>
             <list>
-              <option value="$USER_HOME$/fvm/default/packages/flutter/lib" />
               <option value="$USER_HOME$/fvm/versions/stable/packages/flutter/lib" />
             </list>
           </value>
@@ -244,7 +243,6 @@
         <entry key="flutter_test">
           <value>
             <list>
-              <option value="$USER_HOME$/fvm/default/packages/flutter_test/lib" />
               <option value="$USER_HOME$/fvm/versions/stable/packages/flutter_test/lib" />
             </list>
           </value>
@@ -525,7 +523,6 @@
         <entry key="sky_engine">
           <value>
             <list>
-              <option value="$USER_HOME$/fvm/default/bin/cache/pkg/sky_engine/lib" />
               <option value="$USER_HOME$/fvm/versions/stable/bin/cache/pkg/sky_engine/lib" />
             </list>
           </value>
@@ -590,13 +587,6 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sync_http-0.3.1/lib" />
-            </list>
-          </value>
-        </entry>
-        <entry key="syncfusion_flutter_core">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../syncfusion_flutter_core/lib" />
             </list>
           </value>
         </entry>
@@ -844,13 +834,9 @@
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/xml-6.5.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/yaml-3.1.2/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/yaml_edit-2.2.0/lib" />
-      <root url="file://$USER_HOME$/fvm/default/bin/cache/pkg/sky_engine/lib" />
-      <root url="file://$USER_HOME$/fvm/default/packages/flutter/lib" />
-      <root url="file://$USER_HOME$/fvm/default/packages/flutter_test/lib" />
       <root url="file://$USER_HOME$/fvm/versions/stable/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$USER_HOME$/fvm/versions/stable/packages/flutter/lib" />
       <root url="file://$USER_HOME$/fvm/versions/stable/packages/flutter_test/lib" />
-      <root url="file://$PROJECT_DIR$/../syncfusion_flutter_core/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

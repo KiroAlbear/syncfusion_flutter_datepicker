@@ -39,13 +39,13 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///C:/Users/KIROLOS/fvm/default/packages/flutter",
+      "rootUri": "file:///C:/Users/KIROLOS/fvm/versions/stable/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///C:/Users/KIROLOS/fvm/default/packages/flutter_test",
+      "rootUri": "file:///C:/Users/KIROLOS/fvm/versions/stable/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -99,7 +99,7 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///C:/Users/KIROLOS/fvm/default/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///C:/Users/KIROLOS/fvm/versions/stable/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -129,7 +129,7 @@
     },
     {
       "name": "syncfusion_flutter_core",
-      "rootUri": "../../syncfusion_flutter_core",
+      "rootUri": "../syncfusion_flutter_core",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -164,10 +164,10 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2024-06-13T12:16:56.498740Z",
+  "generated": "2024-06-13T12:53:38.457144Z",
   "generator": "pub",
   "generatorVersion": "3.4.0",
-  "flutterRoot": "file:///C:/Users/KIROLOS/fvm/default",
+  "flutterRoot": "file:///C:/Users/KIROLOS/fvm/versions/stable",
   "flutterVersion": "3.22.0",
   "pubCache": "file:///C:/Users/KIROLOS/AppData/Local/Pub/Cache"
 }
