@@ -206,6 +206,7 @@ class SfDateRangePicker extends StatelessWidget {
       this.headerHeight = 40,
       this.todayHighlightColor,
       this.backgroundColor,
+      this.cutFirstTwoChar = false,
       DateTime? initialSelectedDate,
       List<DateTime>? initialSelectedDates,
       PickerDateRange? initialSelectedRange,
@@ -313,6 +314,8 @@ class SfDateRangePicker extends StatelessWidget {
   ///
   /// ```
   final DateRangePickerView view;
+
+  final bool cutFirstTwoChar;
 
   /// Defines the selection mode for [SfDateRangePicker].
   ///
@@ -2615,6 +2618,7 @@ class SfDateRangePicker extends StatelessWidget {
     return _SfDateRangePicker(
       key: key,
       view: view,
+      cutFirstTwoChar: cutFirstTwoChar,
       selectionMode: selectionMode,
       headerHeight: headerHeight,
       todayHighlightColor: todayHighlightColor,
@@ -2853,6 +2857,7 @@ class SfHijriDateRangePicker extends StatelessWidget {
   /// callback with the current view and the current view visible dates.
   SfHijriDateRangePicker({
     Key? key,
+    required this.cutFirstTwoChar,
     HijriDatePickerView view = HijriDatePickerView.month,
     this.selectionMode = DateRangePickerSelectionMode.single,
     this.headerHeight = 40,
@@ -2962,6 +2967,8 @@ class SfHijriDateRangePicker extends StatelessWidget {
   ///
   /// ```
   final HijriDatePickerView view;
+
+  final bool cutFirstTwoChar;
 
   /// Defines the selection mode for [SfHijriDateRangePicker].
   ///
@@ -5254,6 +5261,7 @@ class SfHijriDateRangePicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return _SfDateRangePicker(
       key: key,
+      cutFirstTwoChar: cutFirstTwoChar,
       view: DateRangePickerHelper.getPickerView(view),
       selectionMode: selectionMode,
       headerHeight: headerHeight,
@@ -5391,7 +5399,7 @@ class SfHijriDateRangePicker extends StatelessWidget {
 class _SfDateRangePicker extends StatefulWidget {
   const _SfDateRangePicker(
       {Key? key,
-      this.cutFirstTwoChar = false,
+      required this.cutFirstTwoChar,
       required this.view,
       required this.selectionMode,
       this.isHijri = false,
