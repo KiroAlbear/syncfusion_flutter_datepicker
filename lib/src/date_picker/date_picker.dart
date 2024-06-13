@@ -206,7 +206,7 @@ class SfDateRangePicker extends StatelessWidget {
       this.headerHeight = 40,
       this.todayHighlightColor,
       this.backgroundColor,
-      this.cutFirstTwoChar = false,
+      this.cutFirstTwoCharsOfDayNamessOfDayNames = false,
       DateTime? initialSelectedDate,
       List<DateTime>? initialSelectedDates,
       PickerDateRange? initialSelectedRange,
@@ -315,7 +315,7 @@ class SfDateRangePicker extends StatelessWidget {
   /// ```
   final DateRangePickerView view;
 
-  final bool cutFirstTwoChar;
+  final bool cutFirstTwoCharsOfDayNames;
 
   /// Defines the selection mode for [SfDateRangePicker].
   ///
@@ -2618,7 +2618,7 @@ class SfDateRangePicker extends StatelessWidget {
     return _SfDateRangePicker(
       key: key,
       view: view,
-      cutFirstTwoChar: cutFirstTwoChar,
+      cutFirstTwoCharsOfDayNames: cutFirstTwoCharsOfDayNames,
       selectionMode: selectionMode,
       headerHeight: headerHeight,
       todayHighlightColor: todayHighlightColor,
@@ -2857,7 +2857,7 @@ class SfHijriDateRangePicker extends StatelessWidget {
   /// callback with the current view and the current view visible dates.
   SfHijriDateRangePicker({
     Key? key,
-    required this.cutFirstTwoChar,
+    required this.cutFirstTwoCharsOfDayNames,
     HijriDatePickerView view = HijriDatePickerView.month,
     this.selectionMode = DateRangePickerSelectionMode.single,
     this.headerHeight = 40,
@@ -2968,7 +2968,7 @@ class SfHijriDateRangePicker extends StatelessWidget {
   /// ```
   final HijriDatePickerView view;
 
-  final bool cutFirstTwoChar;
+  final bool cutFirstTwoCharsOfDayNames;
 
   /// Defines the selection mode for [SfHijriDateRangePicker].
   ///
@@ -5261,7 +5261,7 @@ class SfHijriDateRangePicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return _SfDateRangePicker(
       key: key,
-      cutFirstTwoChar: cutFirstTwoChar,
+      cutFirstTwoCharsOfDayNames: cutFirstTwoCharsOfDayNames,
       view: DateRangePickerHelper.getPickerView(view),
       selectionMode: selectionMode,
       headerHeight: headerHeight,
@@ -5399,7 +5399,7 @@ class SfHijriDateRangePicker extends StatelessWidget {
 class _SfDateRangePicker extends StatefulWidget {
   const _SfDateRangePicker(
       {Key? key,
-      required this.cutFirstTwoChar,
+      required this.cutFirstTwoCharsOfDayNames,
       required this.view,
       required this.selectionMode,
       this.isHijri = false,
@@ -5453,7 +5453,7 @@ class _SfDateRangePicker extends StatefulWidget {
 
   final DateRangePickerSelectionMode selectionMode;
 
-  final bool cutFirstTwoChar;
+  final bool cutFirstTwoCharsOfDayNames;
 
   final bool isHijri;
 
@@ -6949,7 +6949,7 @@ class _SfDateRangePickerState extends State<_SfDateRangePicker>
           null,
           _textScaleFactor,
           null,
-          cutFirstTwoChar: widget.cutFirstTwoChar,
+          cutFirstTwoCharsOfDayNames: widget.cutFirstTwoCharsOfDayNames,
           getPickerStateDetails: _getPickerStateValues,
           updatePickerStateDetails: _updatePickerStateValues,
           isRtl: _isRtl,
@@ -7047,7 +7047,7 @@ class _SfDateRangePickerState extends State<_SfDateRangePicker>
             _datePickerTheme,
             _locale,
             _textScaleFactor,
-            widget.cutFirstTwoChar,
+            widget.cutFirstTwoCharsOfDayNames,
             getPickerStateValues: (PickerStateArgs details) {
               _getPickerStateValues(details);
             },
@@ -7275,7 +7275,7 @@ class _SfDateRangePickerState extends State<_SfDateRangePicker>
                     _viewHeaderVisibleDates,
                     widget.monthViewSettings.showWeekNumber,
                     _isMobilePlatform,
-                    widget.cutFirstTwoChar),
+                    widget.cutFirstTwoCharsOfDayNames),
               ),
             ),
           ),
@@ -8456,7 +8456,7 @@ class _PickerViewHeaderPainter extends CustomPainter {
       this.viewHeaderVisibleDates,
       this.showWeekNumber,
       this.isMobilePlatform,
-      this.cutFirstTwoChar)
+      this.cutFirstTwoCharsOfDayNames)
       : super(repaint: viewHeaderVisibleDates);
 
   /// Defines the view header style.
@@ -8499,7 +8499,7 @@ class _PickerViewHeaderPainter extends CustomPainter {
   final bool isHijri;
 
   // Cuts the first two letters of the day name
-  final bool cutFirstTwoChar;
+  final bool cutFirstTwoCharsOfDayNames;
 
   /// Defines the text scale factor of [SfDateRangePicker].
   final double textScaleFactor;
@@ -8595,7 +8595,7 @@ class _PickerViewHeaderPainter extends CustomPainter {
                 .toUpperCase();
 
         dayText = _updateViewHeaderFormat(dayText);
-        if (cutFirstTwoChar) {
+        if (cutFirstTwoCharsOfDayNames) {
           dayText = dayText.substring(2, dayText.length);
         }
 
@@ -8738,7 +8738,7 @@ class _PickerScrollView extends StatefulWidget {
     this.datePickerTheme,
     this.locale,
     this.textScaleFactor,
-    this.cutFirstTwoChar, {
+    this.cutFirstTwoCharsOfDayNames, {
     Key? key,
     required this.getPickerStateValues,
     required this.updatePickerStateValues,
@@ -8750,7 +8750,7 @@ class _PickerScrollView extends StatefulWidget {
   /// Holds the picker scroll view width.
   final double width;
 
-  final bool cutFirstTwoChar;
+  final bool cutFirstTwoCharsOfDayNames;
 
   /// Holds the picker scroll view height.
   final double height;
@@ -9516,7 +9516,7 @@ class _PickerScrollViewState extends State<_PickerScrollView>
               _disabledDates!.values.isNotEmpty)
           ? _disabledDates?.values.first
           : null),
-      cutFirstTwoChar: widget.cutFirstTwoChar,
+      cutFirstTwoCharsOfDayNames: widget.cutFirstTwoCharsOfDayNames,
       key: key,
       getPickerStateDetails: (PickerStateArgs details) {
         _getPickerViewStateDetails(details);
@@ -11201,7 +11201,7 @@ class _PickerView extends StatefulWidget {
     this.textScaleFactor,
     this.disableDatePredicates, {
     Key? key,
-    required this.cutFirstTwoChar,
+    required this.cutFirstTwoCharsOfDayNames,
     required this.getPickerStateDetails,
     required this.updatePickerStateDetails,
     this.isRtl = false,
@@ -11215,7 +11215,7 @@ class _PickerView extends StatefulWidget {
 
   final bool enableMultiView;
 
-  final bool cutFirstTwoChar;
+  final bool cutFirstTwoCharsOfDayNames;
 
   /// Holds the controller details used on its state
   final dynamic controller;
@@ -11495,7 +11495,7 @@ class _PickerViewState extends State<_PickerView>
                 null,
                 widget.picker.monthViewSettings.showWeekNumber,
                 _isMobilePlatform,
-                widget.cutFirstTwoChar),
+                widget.cutFirstTwoCharsOfDayNames),
           ),
         ),
       ),
